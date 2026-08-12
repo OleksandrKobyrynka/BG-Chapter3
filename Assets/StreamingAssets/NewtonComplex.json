@@ -1,0 +1,21 @@
+{
+  "playerName": "Hero",
+  "equippedWeapon": {
+    "damage": 25.5,
+    "_isBroken": true
+  },
+  "inventoryList": [
+    {
+      "itemName": "Axe",
+      "_amount": 1
+    },
+    {
+      "itemName": "Apple",
+      "_amount": 10
+    }
+  ],
+  "secretTags": {
+    "Quest1": "Completed",
+    "Quest2": "Active"
+  }
+}
