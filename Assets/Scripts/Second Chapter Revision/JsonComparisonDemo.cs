@@ -20,7 +20,7 @@ public class WeaponStats
 }
 
 [System.Serializable]
-public class ItemData
+public class ItemInfo
 {
     public string itemName;
 
@@ -35,7 +35,7 @@ public class ItemData
         set => _amount = value;
     }
 
-    public ItemData(string name, int amt)
+    public ItemInfo(string name, int amt)
     {
         itemName = name;
         _amount = amt;
@@ -49,7 +49,7 @@ public class PlayerSaveWrapper
 
     public WeaponStats equippedWeapon;
 
-    public List<ItemData> inventoryList;
+    public List<ItemInfo> inventoryList;
 
     public Dictionary<string, string> secretTags = new Dictionary<string, string>();
 }
@@ -61,10 +61,10 @@ public class JsonComparisonDemo : MonoBehaviour
     [ContextMenu("Raw List Test")]
     private void RawListTest()
     {
-        List<ItemData> rawList = new List<ItemData>
+        List<ItemInfo> rawList = new List<ItemInfo>
         {
-            new ItemData("Sword", 1),
-            new ItemData("Potion", 5)
+            new ItemInfo("Sword", 1),
+            new ItemInfo("Potion", 5)
         };
 
         string unityJson = JsonUtility.ToJson(rawList, _useIndentation);
@@ -81,10 +81,10 @@ public class JsonComparisonDemo : MonoBehaviour
         {
             playerName = "Hero",
             equippedWeapon = new WeaponStats(25.5f, true),
-            inventoryList = new List<ItemData>
+            inventoryList = new List<ItemInfo>
             {
-                new ItemData("Axe", 1),
-                new ItemData("Apple", 10)
+                new ItemInfo("Axe", 1),
+                new ItemInfo("Apple", 10)
             },
             secretTags = new Dictionary<string, string>
             {

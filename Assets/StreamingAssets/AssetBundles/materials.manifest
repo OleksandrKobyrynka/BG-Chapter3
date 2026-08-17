@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.3.19f1
+CRC: 1193423583
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3b6890705916c80dc9d4cbce69a97d76
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 74616c350bac436be9c6560c196b91ae
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 7c4cc36f50d674974151f0ac31a9c950
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Art/Materials/M_MatteRed.mat
+Dependencies: []
